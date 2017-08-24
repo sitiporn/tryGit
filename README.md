@@ -52,5 +52,38 @@ Test1 Test2 Test3 Test4 Test5 Test6
 ทำ merge ระหว่าง branch ได้ด้วย
 > git merge branch_name
 
+### การ fork, remote เพื่ออัพเดท เเละ pull requests กลับ origin/master
+ทำการ fork เเล้วตั้งชื่อใหม่จะได้ไม่งง (เพิ่มเลข) (จริงๆดู owner ก็ได้)
+จากนั้น clone มา local
+> git clone url...
+
+ทำการ remote เพื่ออัพเดทจากต้นฉบับ
+> git remote add upstream url...
+
+fetch เพื่อดูว่ามีอัพเดทไหม เเล้ว merge 
+> git fetch upstream
+> git merge upstream/master
+
+จากนั้นถ้าต้องการอัพเดท repo ของเราเองที่ fork มา (เเละขอ pull requests ในหน้าเว็บดีกว่า)
+> git add file_name
+> git commit -m "text"
+> git push origin master
+
+หลังจากนั้นถ้าจะขอ pull requests ควรขอ merged กับ branch ย่อยจะดีที่สุดครับ
+
+### โครงสร้าง git อย่างง่าย
+โครงสร้างคำสั่ง คือ git ชื่อคำสั่ง คำสั่งย่อย(ถ้ามี) ชื่อไฟล์ หรือ remote_name branch_name
+ตัวอย่าง
+> git add file_name
+> git remote add remote_name url...
+> git remoet set-url remote_name url...
+> git push remote_name branch_name
+> git merge remote_name/branch_name
+> git felch remote_name
+> git status
+
+จบ...
+
+
 
 
