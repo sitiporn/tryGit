@@ -74,13 +74,13 @@ fetch เพื่อดูว่ามีอัพเดทไหม เเล�
 ### โครงสร้าง git อย่างง่าย
 โครงสร้างคำสั่ง คือ git ชื่อคำสั่ง คำสั่งย่อย(ถ้ามี) ชื่อไฟล์ หรือ remote_name branch_name
 ตัวอย่าง
-> git add file_name<br />
-> git remote add remote_name url...
-> git remoet set-url remote_name url...
-> git push remote_name branch_name
-> git merge remote_name/branch_name
-> git felch remote_name
-> git status
+> git add file_name  
+> git remote add remote_name url...  
+> git remoet set-url remote_name url...  
+> git push remote_name branch_name  
+> git merge remote_name/branch_name  
+> git felch remote_name  
+> git status  
 
 จบ...
 
