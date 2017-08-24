@@ -1,5 +1,5 @@
 # Test github
-Test1 Test2 Test3 Test4 Test5
+Test1 Test2 Test3 Test4 Test5 Test6
 
 ### สรุปคำสั่ง ตอนนี้ `24/08/2560`
 ใช้ git ในไฟล์โปรเจกเรา
